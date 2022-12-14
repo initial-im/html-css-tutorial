@@ -127,11 +127,11 @@ nav ul {
 }
 
 /* grid */
-.box-container-grid {
+.box-grid-three {
   width: 100%;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 1rem;
 }
 
@@ -144,6 +144,12 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-grid-two{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 /* table */
@@ -186,7 +192,7 @@ label {
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
-  }
+}
 
 .bottom {
       margin-bottom: 50px;

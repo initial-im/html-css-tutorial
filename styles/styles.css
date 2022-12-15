@@ -1,6 +1,8 @@
 /* font  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300;1,400&display=swap");
 
+@import "./reset.css";
+
 /* color variable */
 :root {
   --main-color: rgb(234 88 12);
@@ -9,6 +11,43 @@
   --green-color: rgb(22 163 74);
 }
 
+/* basic css */
+.center {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.list-container{
+  font-size:1.2rem;
+  margin:0px 20px
+}
+.list-container li{
+  list-style: circle;
+}
+.ordered li{
+  list-style:decimal
+}
+
+.list-container .ordered{
+  list-style:decimal;
+}
 /* main body */
 body {
   font-family: "Roboto", sans-serif;
@@ -17,8 +56,8 @@ body {
 /* navbar styles */
 nav {
   background-color: var(--main-color);
-  padding: 10px;
-  margin: -10px;
+  padding: 20px;
+  margin: 0px -10px 0px -10px;
 }
 nav a {
   list-style: none;
@@ -138,7 +177,7 @@ nav ul {
 .box-grid {
   height: 200px;
   background-color: var(--yellow-color);
-  color: white;
+  color: black;
   font-size: 1.5rem;
   margin: 10px;
   display: flex;
@@ -186,14 +225,37 @@ label {
   margin-bottom: 20px;
 }
 
-/* etc */
-.center {
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
+/* animation */
+.animated-box-up{
+  background-color: var(--yellow-color);
+  padding:1rem;
+  border-radius:10px;
+  transition: all;
+  transition-duration: 1s;
+  cursor:pointer;
+  margin-bottom:20px;
 }
 
-.bottom {
-      margin-bottom: 50px;
+.animated-box-up:hover{
+  transform: translateY(-1rem);
+}
+
+.animated-box-right{
+  background-color: var(--yellow-color);
+  padding:1rem;
+  border-radius:10px;
+  transition: all;
+  transition-duration: 1s;
+  cursor:pointer;
+  margin-bottom:20px;
+}
+
+.animated-box-right:hover{
+  transform: translateX(10rem);
+  background-color: var(--main-color);
+}
+
+.bgcontainer{
+  background-image:url("https://images.unsplash.com/photo-1670871137637-fe0782c32e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  height:1000px;
 }

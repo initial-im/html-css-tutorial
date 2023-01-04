@@ -235,8 +235,7 @@ label {
   background-color: var(--yellow-color);
   padding: 1rem;
   border-radius: 10px;
-  transition: all;
-  transition-duration: 1s;
+  transition: all 1s;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -249,8 +248,7 @@ label {
   background-color: var(--yellow-color);
   padding: 1rem;
   border-radius: 10px;
-  transition: all;
-  transition-duration: 1s;
+  transition: all 1s;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -258,6 +256,17 @@ label {
 .animated-box-right:hover {
   transform: translateX(10rem);
   background-color: var(--main-color);
+}
+
+.animated-box-sizeup {
+  width: 100px;
+  height: 100px;
+  transition: all 1s;
+  background-color: var(--yellow-color);
+}
+.animated-box-sizeup:hover {
+  width: 200px;
+  height: 200px;
 }
 
 .bgcontainer {
